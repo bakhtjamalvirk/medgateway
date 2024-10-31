@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medgateway - Physio Jobs in Germany</title>
+  <link rel="stylesheet" href="Css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script defer src="JS/script.js"></script>
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+  <!-- Header and Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images\Logos\MGDlogo.png" alt="logo loading">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#why">WHY US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    </nav>
+    
+    <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="#home" onclick="handleLinkClick(event)">HOME</a></li>
+      <li><a href="#why" onclick="handleLinkClick(event)">WHY US</a></li>
+      <li><a href="#services" onclick="handleLinkClick(event)">SERVICES</a></li>
+      <li><a href="#faq" onclick="handleLinkClick(event)">FAQ</a></li>
+      <li><a href="#contact" onclick="handleLinkClick(event)">CONTACT</a></li>
+    </ul>
+  </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-header">
+      <h1>MedGateway Deutschland</h1>
+    </div>
+    <div class="hero-section">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="home-img" src="Images\Assets\home1.jpg">
+                <div class="home-text">
+                    <h1>Want To Be a Professional Physio in Germany</h1>
+                    <p>We are actively searching for passionate physical therapists to work in Germany</p>
+                    <button onclick="scrollToSection('services')">Book an Appointment</button>
+                </div>
+            </div>
+              
+            <div class="mySlides fade">
+                <img class="home-img" src="Images\Assets\home2.jpg">
+                <div class="home-text">
+                    <h1>Elevate Your Career</h1>
+                    <p>Shape your future with prestigious physiotherapy roles and grow professionally in Germany from anywhere in the world.</p>
+                    <button onclick="scrollToSection('services')">Upload Your CV</button>
+                </div>
+            </div>
+              
+            <div class="mySlides fade">
+                <img class="home-img" src="Images\Assets\home3.jpg">
+                <div class="home-text">
+                    <h1>Unlock Global Opportunities</h1>
+                    <p>Join our network of physiotherapists and explore career possibilities across Germany with expert visa consultancy.</p>
+                    <button onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+              
+        </div>
+    </div>
+    <div class="home-footer">
+        <ul>
+            <li>Job insurance included</li>
+            <li>Top international physio</li>
+            <li>Customer Support</li>
+        </ul>
+    </div>
+    <div class="welcome">
+        <div class="wkind">
+            <h1>Welcome to MedGateway Deutschland</h1>
+        </div>
+        <div class="homeicons">
+            <a href="#services">
+                <div class="welcomeicons">
+                    <img src="Images\Logos\1.png" alt="Loading">
+                    <p><b>International Physio</b></p>
+                </div>
+            </a>
+            <a href="#services">
+                <div class="welcomeicons">
+                    <img src="Images\Logos\2.png" alt="Loading">
+                    <p><b>National Physio</b></p>
+                </div>
+            </a>
+            <a href="#services">
+                <div class="welcomeicons">
+                    <img src="Images\Logos\3.png" alt="Loading">
+                    <p><b>Employeer</b></p>
+                </div>
+            </a>
+        </div>
+    </div>
+  </section>  
+
+  <!-- Why Us Section -->
+  <section id="why" class="why-section">
+    <div class="why-header">
+        <div class="left-content"><img src="Images\Assets\1.png" alt="loading"></div>
+        <div class="right-content">
+            <h1>Choosing MedGateway</h1>
+            <p>We specialize in connecting physiotherapists with top-tier job opportunities in Germany from anywhere in the world. Our platform not only offers exclusive positions but also provides visa consultancy, guiding you through the process to ensure a smooth transition to your new career. Whether you're looking to advance your career or relocate to Germany, we are here to support you every step of the way in securing your dream job.</p>
+            <div class="info-container">
+              <ul class="info-list">
+                  <li>✔️ Through out help and motivation</li>
+                  <li>✔️ Complete guidance</li>
+                  <li>✔️ Reliability: Registered in Germany and Pakistan</li>
+                  <li>✔️ Experienced and qualified staff</li>
+                  <li>✔️ Only company to deliver these services in Pakistan</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="why-middle">
+      <ul class="banner-cards">
+        <li class="de-list" style="--accent-color:#0B374D">
+          <div class="title-wrapper">
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+            <div class="title">Our Services - What's included</div>
+          </div>
+          <div class="descr">
+            <ul>
+              <li>Document translation</li>
+              <li>Attestation & Processing</li>
+              <li>Recognition fees in Germany</li>
+              <li>Job offer letter support</li>
+              <li>Fast track process fees</li>
+              <li>German language course fees</li>
+            </ul>
+          </div>
+        </li>
+        <li class="de-list" style="--accent-color:#1286A8">
+          <div class="title-wrapper">
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+            <div class="title">Free Trial Period For Language Classes</div>
+          </div>
+          <div class="descr">
+            <ul>
+              <li>Try before you commit</li>
+              <li><b>Key Points</b>
+                <ul>
+                  <li>1-week contract free trial classes</li>
+                  <li>Decision at the end of trial period</li>
+                  <li>B1 exam fee to be submitted (for booking purposes)</li>
+                  <li>1-month interest check (non-serious students removed)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="de-list" style="--accent-color:#D2B53B">
+          <div class="title-wrapper">
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+            <div class="title">Language Exam & Recognition Process</div>
+          </div>
+          <div class="descr">
+            <ul class="de-ul">
+              <li><i class="fa fa-language" aria-hidden="true"></i><p>Your path to language certification</p></li>
+              <li><i class="fa fa-key" aria-hidden="true"></i><p><b>Key Points</b></p></li>
+              <li><i class="fa fa-calendar" aria-hidden="true"></i><p>Must register for B1 exam within 6 months</p></li>
+              <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><p>One exam fee covered in all packages</p></li>
+              <li><i class="fa fa-plane" aria-hidden="true"></i></i><p>Importance of passing B1 for job offer and visa</p></li>
+            </ul>
+          </div>
+        </li>
+        <li class="de-list" style="--accent-color:#DA611E">
+          <div class="title-wrapper">
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+            <div class="title">Documents Required For The Process</div>
+          </div>
+          <div class="descr">
+            <ul>
+              <li>Original educational documents</li>
+              <li>Passport</li>
+              <li>Signed contract (end of trial)</li>
+              <li>Signed recognition process forms</li>
+            </ul>
+          </div>
+        </li>
+        <li class="de-list" style="--accent-color:#AC2A1A">
+          <div class="title-wrapper">
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+            <div class="title">Assistance Beyond The Visa</div>
+          </div>
+          <div class="descr">
+            <ul>
+              <li>Assistance in personal documentation</li>
+              <li>Assistance with language exam preperations</li>
+              <li>Assistance to find accommodation</li>
+              <li>Assistance to apply PR and Passport in future</li>
+              <li>Chance to get on our Panel of physiotherapists in future</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="why-footer">
+        <h2 class="heading">Our Team</h2>
+        <div class="team-carousel">
+            <button class="carousel-btn left-btn" onclick="prevMember()">&#60;</button> <!-- Left Arrow -->
+            
+            <div class="team-member" id="teamMember">
+              <img id="memberImage" src="Images\Team\shahzaib.jpeg" alt="Team Member" />
+              <h2 id="memberName">John Doe</h2>
+              <h3 id="memberRole">Senior Physiotherapist</h3>
+              <p id="memberWork"></p>
+            </div>
+          
+            <button class="carousel-btn right-btn" onclick="nextMember()">&#62;</button> <!-- Right Arrow -->
+          </div>          
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="services-content">
+      <h1><b>Services</b></h1>
+      <p style="color:black; font-size: larger; margin-bottom: 10vh;">Book an appointment or upload your CV for exciting career opportunities.</p>
+  
+      <div class="services-buttons">
+        <button onclick="openForm('appointmentForm')">Book an Appointment</button>
+        <button class="btn-cv" onclick="openForm('cvForm')">Upload CV</button>
+      </div>
+    </div>
+    <div class="services-footer">
+        <div class="sf-content">
+            <h1>International</h1>
+            <p>Explore exciting career opportunities tailored for international physiotherapists seeking to work in Germany. Join our platform to connect with top healthcare providers and advance your professional journey.</p>
+        </div>
+        <div class="sf-content" style="background-color: rgb(207, 238, 47);">
+            <h1>National</h1>
+            <p>Discover a wide range of job openings for national physiotherapists looking to make an impact in their communities. Our user-friendly platform connects you with leading employers dedicated to your growth.</p>
+        </div>
+        <div class="sf-content">
+            <h1>Employer</h1>
+            <p>Find qualified physiotherapy professionals ready to enhance your team and deliver exceptional patient care. Utilize our platform to streamline your hiring process and access a diverse talent pool.</p>
+        </div>
+    </div>
+  
+   <!-- Appointment Form UI -->
+<div id="appointmentForm" class="form-popup">
+    <span class="close-btn" onclick="closeForm('appointmentForm')">&times;</span>
+    <div class="form-content">
+        <img src="Images\Logos\appointment.jpg" alt="Appointment" />
+        <form id="appointmentForm">
+            <h2>Book an Appointment</h2>
+            <input type="text" id="name" placeholder="Your Name*" required />
+            <small id="nameError" class="error-message"></small>
+            <input type="email" id="email" placeholder="Your Email*" required />
+            <small id="emailError" class="error-message"></small>
+            
+            <select id="category" required>
+                <option value="" disabled selected>For*</option>
+                <option value="international">International Physio</option>
+                <option value="national">National Physio</option>
+                <option value="employer">Employer</option>
+            </select>
+            <small id="categoryError" class="error-message"></small>
+
+            <input type="date" id="date" required />
+            <small id="dateError" class="error-message"></small>
+            <textarea id="message" placeholder="Additional Information"></textarea>
+            <small id="messageError" class="error-message"></small>
+
+            <button type="button" onclick="bookAppointment()">Submit</button>
+        </form>
+    </div>
+</div>
+
+  <!-- CV Form -->
+<div id="cvForm" class="form-popup">
+  <span class="close-btn" onclick="closeForm('cvForm')">&times;</span>
+  <div class="form-content">
+      <img src="Images\Logos\appointment.jpg" alt="Upload CV" />
+      <form id="cvUploadForm">
+          <h2>Upload CV</h2>
+          <input type="text" id="cvname" placeholder="Your Name*" required />
+          <small id="cvNameError" class="error-message"></small>
+          <select id="cvcategory" required>
+              <option value="" disabled selected>For*</option>
+              <option value="international">International Physio</option>
+              <option value="national">National Physio</option>
+              <option value="employer">Employer</option>
+          </select>
+          <small id="cvCategoryError" class="error-message"></small>
+          <input type="email" id="cvemail" placeholder="Your Email*" required />
+          <small id="cvEmailError" class="error-message"></small>
+          <input type="file" id="cv" accept=".pdf,.docx" required />
+          <small id="cvFileError" class="error-message"></small>
+          <button type="button" onclick="uploadCV()">Upload</button> <!-- Use type="button" -->
+      </form>
+  </div>
+</div>
+  
+  </section>
+
+  <section id="faq" class="faq-section">
+    <h1>FAQs</h1>
+    <div class="faq-container">
+      <ul class="faq-list">
+        <li class="qa-li">
+          <div class="question">
+            <span>How long can the process take?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">The entire process, including document preparation, language proficiency tests, and official procedures like visa issuance and registration, can take approximately 7 to 10 months, depending on individual circumstances and government processing times.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>How long the job offer contract will be?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">The job offer contract is usually unlimited, providing long-term employment with clear terms on probation, benefits, and notice periods.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>How long can we stay in germany?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">The initial visa is for 3-6 months and can be extended to 4 years based on employment and compliance with regulations.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>How long will it take for PR?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">You can apply for permanent residency (PR) after receiving 24 consecutive pay slips, which typically takes around 2 years. This timeframe assumes continuous employment and fulfillment of other residency requirements, such as paying taxes and contributions to social security. Meeting these criteria ensures eligibility for PR, granting you long-term stability and the ability to live and work in Germany without restrictions.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>How long it take to get German passport?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">To obtain a German passport, it takes 3 years if you reach C1 level in the language, and 5 years if you achieve only B1 level, along with fulfilling other residency requirements.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>Can I leave my job?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">You can leave your job, but it's not recommended within the first year. If you choose to resign, you must provide a 3-month notice period, as leaving early may impact your residency status and future job prospects.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>Can i visit back pakistan?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">Yes, you can visit Pakistan, but you'll need to plan your holidays yourself, typically around 30 paid holidays per year. It's important to coordinate with your employer to ensure your absence does not disrupt work.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>Can i bring my family with me or call them later?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">Yes, you can bring your family with you or call them later to join you. The choice is yours; if you bring them initially, ensure they have the necessary visas. Alternatively, you can apply for family reunification later once you’ve settled in Germany.</div>
+        </li>
+        <li class="qa-li">
+          <div class="question">
+            <span>Can my spouse work?</span>
+            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+          </div>
+          <div class="answer">Yes, your spouse can work in Germany, which allows for additional household income and better integration. However, their employment will change your tax class, potentially affecting your net income. It's advisable to consult a tax advisor to understand the implications and optimize your tax situation.</div>
+        </li>
+      </ul>
+    </div>    
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="form-container">
+        <div class="form-content">
+          <div class="form-title">
+            <h1>GOT A QUERY? CONTACT US</h1>
+            <p>We’ll get back to you shortly.</p>
+          </div>
+          <form>
+            <label for="firstName">First name *</label>
+            <input type="text" id="firstName" required>
+            <small id="firstNameError" class="error-message"></small>
+    
+            <label for="lastName">Last name *</label>
+            <input type="text" id="lastName" required>
+            <small id="lastNameError" class="error-message"></small>
+    
+            <label for="cEmail">Email *</label>
+            <input type="email" id="cEmail" required>
+            <small id="cEmailError" class="error-message"></small>
+    
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" placeholder="Write your message here..." required></textarea>
+            <small id="cMessageError" class="error-message"></small>
+    
+            <button type="button" onclick="sendContactForm()">Submit</button>
+          </form>
+        </div>
+    
+        <div class="form-image">
+          <img src="Images\Logos\box.png" alt="Boxes Image">
+        </div>
+      </div>
+  </section>
+  <div class="footer-container">
+    <div class="arrows-container">
+        <div class="arrows">
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+            <div class="arrow">&rarr;</div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer-column">
+      <h4>MedGateway Deutschland</h4>
+      <p>+49 15560 509929, 0329 0368890</p>
+      <p>info@mysite.com</p>
+      <p>Am Köpfchen 7 757339,<br>Germany</p>
+    </div>
+
+    <div class="footer-column">
+      <a href="#">Home</a>
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#faq">FAQs</a>
+    </div>
+
+    <div class="footer-column">
+      <a href="#contact">Contact</a>
+      <a href="#services">Book Appointment</a>
+      <a href="#services">Upload CV</a>
+    </div>
+
+    <div class="footer-column">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MedGateway Deutschland. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
